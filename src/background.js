@@ -1,3 +1,7 @@
+function randint(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+
 document.addEventListener('DOMContentLoaded', function() {
   const canvas = document.createElement('canvas');
   canvas.className = 'background-canvas';
@@ -8,9 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
   canvas.height = window.innerHeight;
 
   let nodes = [];
-  const numNodes = 100;
-  const nodeRadius = 2;
-  const maxDistance = 100;
+  const numNodes = randint(90,200);
+  const nodeRadius = randint(2,5);
+  const maxDistance = randint(50,200);
 
   class Node {
     constructor() {
