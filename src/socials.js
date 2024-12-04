@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     const socials = [
-        { name: 'Twitter', url: 'https://twitter.com/whydidyouclickonthislink', iconClass: 'fab fa-twitter' },
         { name: 'GitHub', url: 'https://github.com/thatfrozenfrog', iconClass: 'fab fa-github' },
-        { name: 'LinkedIn', url: 'https://linkedin.com/in/whydidyouclickonthislink', iconClass: 'fab fa-linkedin' },
+        { name: 'Telehack', url: 'https://telehack.com/u/suika', iconClass: 'fa-solid fa-terminal' },
+        { name: 'melonaddict', url: '#', iconClass: 'fab fa-discord' },
         // Add more social links here as needed
     ];
 
