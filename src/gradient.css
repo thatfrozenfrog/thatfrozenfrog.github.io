@@ -26,10 +26,10 @@
     overflow: hidden;
     margin: 0px;
   }
-  
+  /*
   body.toggled {
     animation: none;
-  }
+  }*/
   
   body.toggled > #title {
     opacity: 0;
@@ -37,6 +37,7 @@
   
   body.toggled > #icon {
     opacity: 1;
+    z-index: 3;
   }
   
   body.toggled > #tiles > .tile:hover {
@@ -64,6 +65,7 @@
   .tile {
     cursor: pointer;
     position: relative;
+    z-index: 2;
   }
   
   .tile:hover:before {
@@ -77,4 +79,15 @@
     position: absolute;
   }
 
-  
+  .portfolio-card {
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 1rem;
+    
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+    opacity: 0;
+  }
