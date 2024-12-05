@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const socials = [
         { name: 'GitHub', url: 'https://github.com/thatfrozenfrog', iconClass: 'fab fa-github' },
         { name: 'Telehack', url: 'https://telehack.com/u/suika', iconClass: 'fa-solid fa-terminal' },
-        { name: 'melonaddict', url: '#', iconClass: 'fab fa-discord' },
+        { name: 'melonaddict', url: '', iconClass: 'fab fa-discord' },
         // Add more social links here as needed
     ];
 

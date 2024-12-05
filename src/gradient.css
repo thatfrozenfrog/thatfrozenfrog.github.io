@@ -33,11 +33,13 @@
   
   body.toggled > #title {
     opacity: 0;
+    
   }
   
   body.toggled > #icon {
     opacity: 1;
     z-index: 3;
+    transition: opacity 1s ease-out;
   }
   
   body.toggled > #tiles > .tile:hover {
@@ -75,7 +77,7 @@
   .tile:before {
     background-color: rgb(15, 15, 15);
     content: "";
-    inset: 0.5px;
+    inset: 0px;
     position: absolute;
   }
 
@@ -89,5 +91,6 @@
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(5px);
     z-index: 1;
+    transition: opacity 1s ease-in;
     opacity: 0;
   }
