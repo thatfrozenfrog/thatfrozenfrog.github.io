@@ -1,0 +1,43 @@
+@keyframes wave {
+    from, to {
+      transform: translate(-50%, 0%);
+    }
+    
+    50% {
+      transform: translate(-50%, -20%);
+    }
+  }
+  
+  #bubble-wrapper {
+    height: 100%;
+    width: 100%;
+    
+    position: fixed;
+    bottom: 0px;
+    
+    overflow: hidden;
+    pointer-events: none;
+  }
+  
+  .bubble {
+    height: max(300px, 30vw);
+    width: max(300px, 30vw);
+    opacity: 0.7;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 100%;
+    
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    
+    animation: wave 3s ease-in-out infinite;
+  }
+  
+  @media(prefers-reduced-motion) {
+    .bubble {
+      animation: none;
+      display: none;
+    }
+  }
+  

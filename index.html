@@ -5,29 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WIP</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-
+    
     <link rel="stylesheet" href="src/styles.css">
     <link rel="stylesheet" href="src/gradient.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="src/blob.css">
+    <link rel="stylesheet" href="src/glitch.css">
     
 </head>
 <body>
     <script src="src/background.js"></script>
     <script src="src/socials.js"></script> 
     
+    <div id="bubble-wrapper"></div>
+    <div class="pattern"></div>
     <p id="title" class="centered"></p>
 
     <div class="portfolio-card centered" id="icon">
-        <h1 style="text-align: center;">tewi</h1>
-        <p>Welcome to my portfolio!</p>
-        <p>Currently WIP. This is a placeholder site.</p>
-        <div class="social-links">
+        <h1 style="text-align: center;">tewi.me</h1>
+
+        <div style="display: flex; align-items: center; justify-content: center; gap: 10px; padding-bottom: 10%; position: relative;">
+            <div class="glitch-wrapper">
+                <img src="img/tewi.webp" alt="Tewi" class="glitch-img">
+                <img src="img/tewi.webp" alt="Tewi" class="glitch-img">
+                <img src="img/tewi.webp" alt="Tewi" class="glitch-img">
+                <img src="img/tewi.webp" alt="Tewi" class="glitch-img">
+                <img src="img/tewi.webp" alt="Tewi" class="glitch-img">
+                <img src="img/tewi.webp" alt="Tewi" class="glitch-img">
+                <img src="img/tewi.webp" alt="Tewi" class="glitch-img">
+                <img src="img/tewi.webp" alt="Tewi" class="glitch-img">
+                <img src="img/tewi.webp" alt="Tewi" class="glitch-img">
+                <img src="img/tewi.webp" alt="Tewi" class="glitch-img">
+            </div>
+            <div class="split-text">
+                <span class="split-text-1">I believe in Tewi supremacy</span>
+                <span class="split-text-2">I believe in Tewi supremacy</span>
+                <span class="split-text-3">I believe in Tewi supremacy</span>
+                <span class="split-text-4">I believe in Tewi supremacy</span>
+            </div>
+        </div>
+
+        <div class="social-links" style="clear: both;">
         </div>
     </div>
     <div id="tiles"></div>
    
     <script src="src/gradient.js"></script>
-
+    <script src="src/blob.js"></script>
+    
+    
 
 </body>
 </html>
